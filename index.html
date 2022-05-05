@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/simplebar.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/icons/favicon.svg">
+  <title>Blanchard</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <button class="header__hamb-btn" aria-label="Открыть меню">
+          <span class="header__hamb-line header__hamb-line_pos_top"></span>
+          <span class="header__hamb-line header__hamb-line_pos_center"></span>
+          <span class="header__hamb-line header__hamb-line_pos_bottom"></span>
+        </button>
+        <a href="" class="header__logo logo" aria-label="Логотип Blanchard">
+          <img class="logo__img" src="img/logo.svg" alt="Logo">
+        </a>
+        <div class="header__nav-enter-wrap">
+          <button class="header__hamb-btn-close" aria-label="Закрыть меню">
+            <span class="header__hamb-line-close header__hamb-line-close_pos_top"></span>
+            <span class="header__hamb-line-close header__hamb-line-close_pos_bottom"></span>
+          </button>
+          <nav class="header__nav menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#about" class="menu__link">
+                  О нас
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#gallery" class="menu__link">
+                  Галерея
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#catalog" class="menu__link">
+                  Каталог
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#events" class="menu__link">
+                  События
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#editions" class="menu__link">
+                  Издания
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#projects" class="menu__link">
+                  Проекты
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="" class="header__enter">
+            <svg class="header__enter-icon" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+            </svg>
+            <span class="header__enter-text">
+              Войти
+            </span>
+          </a>
+        </div>
+        <button type="button" class="header__search-open" aria-label="Открыть форму поиска">
+          <svg class="header__search-icon" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__wrap">
+          <nav class="header__nav menu-epochs">
+            <ul class="menu-epochs__list">
+              <li class="menu-epochs__item">
+                <button class="menu-epochs__btn" data-path="1">
+                  Реализм
+                  <svg class="menu-epochs__btn-icon" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white"/>
+                  </svg>
+                </button>
+                <div class="submenu" data-target="1">
+                  <ul class="menu-epochs__submenu submenu__list">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_tint">
+                        Тинторетто
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_frid">
+                        Фридрих
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_leo">
+                        Леонардо
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_ver">
+                        Верроккьо
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_ver">
+                        Верроккьо
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-epochs__item">
+                <button class="menu-epochs__btn" data-path="2">
+                  Импрессионизм
+                  <svg class="menu-epochs__btn-icon" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white"/>
+                  </svg>
+                </button>
+                <div class="submenu" data-target="2">
+                  <ul class="menu-epochs__submenu submenu__list">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_mone">
+                        Моне
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_sisl">
+                        Сислей
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_mane">
+                        Мане
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_renuar">
+                        Ренуар
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-epochs__item">
+                <button class="menu-epochs__btn" data-path="3">
+                  Постимпрессионизм
+                  <svg class="menu-epochs__btn-icon" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white"/>
+                  </svg>
+                </button>
+                <div class="submenu" data-target="3">
+                  <ul class="menu-epochs__submenu submenu__list">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_van">
+                        Ван Гог
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_sezan">
+                        Сезанн
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_gogen">
+                        Гоген
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_sera">
+                        Сёра
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-epochs__item">
+                <button class="menu-epochs__btn" data-path="4">
+                  Авангард
+                  <svg class="menu-epochs__btn-icon" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white"/>
+                  </svg>
+                </button>
+                <div class="submenu" data-target="4">
+                  <ul class="menu-epochs__submenu submenu__list">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_kand">
+                        Кандинский
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_marinetty">
+                        Маринетти
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_malevich">
+                        Малевич
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_picasso">
+                        Пикассо
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-epochs__item">
+                <button class="menu-epochs__btn" data-path="5">
+                  Футуризм
+                  <svg class="menu-epochs__btn-icon" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L6 6L1 1" stroke="white"/>
+                  </svg>
+                </button>
+                <div class="submenu" data-target="5">
+                  <ul class="menu-epochs__submenu submenu__list">
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_karra">
+                        Карра
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_pratella">
+                        Прателла
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_severiny">
+                        Северини
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link submenu__link_bg_balla">
+                        Балла
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <form action="#" class="header__search-form search-form">
+            <button type="submit" class="search-form__btn" aria-label="Найти">
+              <svg class="search-form__btn-icon" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+              </svg>
+            </button>
+            <input type="text" name="search" class="search-form__input" placeholder="Поиск по сайту">
+            <button type="button" class="search-form__close-btn" aria-label="Закрыть форму поиска">
+              <svg class="search-form__close-icon" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.7">
+                <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
+                <rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+                </g>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-hero section">
+      <div class="section-hero__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="section-hero__slide section-hero__slide_bg_1 swiper-slide"></div>
+          <div class="section-hero__slide section-hero__slide_bg_2 swiper-slide"></div>
+          <div class="section-hero__slide section-hero__slide_bg_3 swiper-slide"></div>
+        </div>
+      </div>
+      <div class="section-hero__content">
+        <div class="container">
+          <h1 class="section-hero__title">
+            Прикоснитесь к&nbsp;прекрасному
+          </h1>
+          <p class="section-hero__desc">
+            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+          </p>
+          <a href="#contacts" class="section-hero__btn btn">
+            Подписаться на рассылку
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-about section" id="about">
+      <div class="container">
+        <h2 class="section-about__title section-title">
+          О нас
+        </h2>
+        <p class="section-about__text text">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+        </p>
+      </div>
+    </section>
+    <section class="section-gallery section" id="gallery">
+      <div class="container">
+        <div class="section-gallery__wrap">
+          <div class="section-gallery__info">
+            <h2 class="section-gallery__title section-title">
+              Галерея
+            </h2>
+            <form action="#" class="section-gallery__form form-filter">
+              <h3 class="form-filter__title">
+                Фильтр:
+              </h3>
+              <select name="filter" class="form-filter__select" id="gallery-filter">
+                <option value="Живопись" class="form-filter__option" selected>Живопись</option>
+                <option value="Рисунок" class="form-filter__option">Рисунок</option>
+                <option value="Скульптура" class="form-filter__option">Скульптура</option>
+              </select>
+            </form>
+          </div>
+          <div class="section-gallery__swiper gallery-swiper swiper">
+            <div class="gallery-swiper__nav">
+              <button class="gallery-swiper__btn-prev gallery-swiper__btn"></button>
+              <div class="gallery-swiper__fraction"></div>
+              <button class="gallery-swiper__btn-next gallery-swiper__btn"></button>
+            </div>
+            <div class="gallery-swiper__wrap swiper-wrapper">
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-1-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-1-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-1-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-1.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-2-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-2-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-2-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-2.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Казимир Малевич
+                  </span>
+                  <span class="gallery-slide__title">
+                    “Женщина с граблями”
+                  </span>
+                  <span class="gallery-slide__date">
+                    1931-1932
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Картина из второй серии крspanстьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-3-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-3-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-3-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-3.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-4-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-4-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-4-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-4.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-5-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-5-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-5-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-5.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-6-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-6-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-6-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-6.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-7-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-7-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-7-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-7.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-8-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-8-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-8-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-8.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-9-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-9-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-9-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-9.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-10-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-10-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-10-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-10.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-11-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-11-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-11-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-11.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+              <button type="button" class="gallery-swiper__slide gallery-slide swiper-slide">
+                <picture class="gallery-slide__pic">
+                  <source srcset="img/gallery-picture-12-mobile.jpg" media="(max-width: 576px)">
+                  <source srcset="img/gallery-picture-12-768.jpg" media="(max-width: 992px)">
+                  <source srcset="img/gallery-picture-12-tablet.jpg" media="(max-width: 1200px)">
+                  <img class="gallery-slide__img" src="img/gallery-picture-12.jpg" alt="Картина">
+                </picture>
+                <span class="gallery-slide__wrap">
+                  <span class="gallery-slide__name">
+                    Имя художника
+                  </span>
+                  <span class="gallery-slide__title">
+                    Название картины
+                  </span>
+                  <span class="gallery-slide__date">
+                    Год создания
+                  </span>
+                  <span class="gallery-slide__desc">
+                    Какое-то описание картины
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <p class="section-gallery__text text">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="section-gallery__link">авторизуйтесь,</a> либо воспользуйтесь лицензией.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-catalog section" id="catalog">
+      <div class="container">
+        <div class="section-catalog__wrap">
+          <h2 class="section-catalog__title section-title">
+            Каталог
+          </h2>
+          <ul class="section-catalog__countries-btns countries-btns">
+            <li class="countries-btns__item">
+              <button class="countries-btns__button countries-btns__button_bg_france" data-path="france" aria-label="Франция"></button>
+            </li>
+            <li class="countries-btns__item">
+              <button class="countries-btns__button countries-btns__button_bg_germany" data-path="germany" aria-label="Германия"></button>
+            </li>
+            <li class="countries-btns__item">
+              <button class="countries-btns__button countries-btns__button_bg_italy active" data-path="italy" aria-label="Италия"></button>
+            </li>
+            <li class="countries-btns__item">
+              <button class="countries-btns__button countries-btns__button_bg_russia" data-path="russia" aria-label="Россия"></button>
+            </li>
+            <li class="countries-btns__item">
+              <button class="countries-btns__button countries-btns__button_bg_belgium" data-path="belgium" aria-label="Бельгия"></button>
+            </li>
+          </ul>
+        </div>
+        <p class="section-catalog__text text">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="section-catalog__content countries">
+          <div class="countries__item" data-target="france">
+            <div class="countries__artist-list">
+              <div class="countries__artist artist active" data-target="empty">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+            </div>
+            <ul class="countries__accordion accordion">
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1400 по 1499 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1500 по 1599 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1600 по 1699 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1700 по 1799 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1800 по 1899 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1900 по 1999 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 2000 г.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="countries__item" data-target="germany">
+            <div class="countries__artist-list">
+              <div class="countries__artist artist active" data-target="empty">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+            </div>
+            <ul class="countries__accordion accordion">
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1400 по 1499 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1500 по 1599 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1600 по 1699 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1700 по 1799 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1800 по 1899 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1900 по 1999 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 2000 г.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+          <div class="countries__item active" data-target="italy">
+            <div class="countries__artist-list">
+              <div class="countries__artist artist" data-target="bindo">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="bergonie">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="bissolo">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="boltrafio">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="bonsinory">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="bottichini">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="bramantino">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="brea">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="biadgo">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist active" data-target="domenico">
+                <div class="artist__photo">
+                  <picture>
+                    <img class="artist__img" src="img/domenico.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Доменико&nbsp;Гирландайо
+                </h3>
+                <span class="artist__years">
+                  2 июня 1448 — 11 января 1494.
+                </span>
+                <p class="artist__text text">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                </p>
+              </div>
+              <div class="countries__artist artist" data-target="vekkietta">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="verrokkio">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="goccoli">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="granachi">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="checco">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="udine">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="paolo">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="dgorgone">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="parentino">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="pazelino">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="perudgino">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="perucci">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="pizanello">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+              <div class="countries__artist artist" data-target="pinturicco">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+            </div>
+            <ul class="countries__accordion accordion">
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1400 по 1499 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists-wrap">
+                  <ul class="accordion__artists artists-list">
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="bindo">
+                        Бенедетто ди Биндо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="bergonie">
+                        Бергоньоне, Амброджо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="bissolo">
+                        Биссоло, Франческо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="boltrafio">
+                        Больтраффио, Джованни
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="bonsinory">
+                        Бонсиньори, Франческо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="bottichini">
+                        Боттичини, Рафаэлло
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="bramantino">
+                        Брамантино
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="brea">
+                        Бреа, Людовико
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="biadgo">
+                        Бьяджо д’Антонио Туччи
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="vekkietta">
+                        Веккьетта
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="verrokkio">
+                        Андреа Верроккьо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn active" data-path="domenico">
+                        Доменико Гирландайо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="goccoli">
+                        Беноццо Гоццоли
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="granachi">
+                        Граначчи, Франческо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="checco">
+                        Грегорио ди Чекко
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="udine">
+                        Джованни да Удине
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="paolo">
+                        Джованни ди Паоло
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="dgorgone">
+                        Джорджоне
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="parentino">
+                        Парентино, Бернардо
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="pazelino">
+                        Пезеллино
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="perudgino">
+                        Пьетро Перуджино
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="perucci">
+                        Перуцци, Бальдассаре
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="pizanello">
+                        Пизанелло
+                      </button>
+                    </li>
+                    <li class="artists-list__item">
+                      <button class="artists-list__btn" data-path="pinturicco">
+                        Пинтуриккьо
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1500 по 1599 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1600 по 1699 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1700 по 1799 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1800 по 1899 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1900 по 1999 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 2000 г.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="countries__item" data-target="russia">
+            <div class="countries__artist-list">
+              <div class="countries__artist artist active" data-target="empty">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+            </div>
+            <ul class="countries__accordion accordion">
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1400 по 1499 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1500 по 1599 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1600 по 1699 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1700 по 1799 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1800 по 1899 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1900 по 1999 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 2000 г.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="countries__item" data-target="belgium">
+            <div class="countries__artist-list">
+              <div class="countries__artist artist active" data-target="empty">
+                <div class="artist__photo">
+                  <picture>
+                    <source srcset="img/empty-artist-mobile.jpg" media="(max-width: 575px)">
+                    <img class="artist__img" src="img/emty-artist.jpg" alt="">
+                  </picture>
+                </div>
+                <h3 class="artist__name">
+                  Что мы о нём знаем?
+                </h3>
+                <p class="artist__text artist__text_empty text">
+                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                </p>
+                <a href="#gallery" class="artist__link">
+                  В галерею
+                </a>
+              </div>
+            </div>
+            <ul class="countries__accordion accordion">
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1400 по 1499 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1500 по 1599 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1600 по 1699 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1700 по 1799 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1800 по 1899 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 1900 по 1999 гг.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__btn">
+                  <span class="accordion__years">
+                    C 2000 г.
+                  </span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__artists empty-artists">
+                  <div class="empty-artists__img-wrap">
+                    <picture>
+                      <source srcset="img/empty-artists-mobile.png" media="(max-width: 575px)">
+                      <img class="empty-artists__img" src="img/empty-artists.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="empty-artists__content">
+                    <h4 class="empty-artists__title">
+                      Здесь пока пусто
+                    </h4>
+                    <p class="empty-artists__text">
+                      А в галерее вы всегда можете найти что-то интересное для себя
+                    </p>
+                    <a href="#gallery" class="empty-artists__link">
+                      В галерею
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-events section" id="events">
+      <div class="container">
+        <h2 class="section-events__title section-title">
+          События
+        </h2>
+        <div class="section-events__swiper">
+          <div class="section-events__wrap">
+            <article class="section-events__card event-card">
+              <div class="event-card__img-wrap">
+                <img src="img/gravura.jpg" alt="Гравюра" class="event-card__img">
+              </div>
+              <p class="event-card__place">
+                Музей им. Щусева
+              </p>
+              <p class="event-card__date">
+                с 20 марта по 30 апреля
+              </p>
+              <div class="event-card__wrap">
+                <h3 class="event-card__title">
+                  Книжная гравюра в живом восприятии
+                </h3>
+                <p class="event-card__desc">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
+                </p>
+                <a href="#" class="event-card__link">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+            <article class="section-events__card event-card">
+              <div class="event-card__img-wrap">
+                <img src="img/discussion.jpg" alt="Дмитрий Петров и Сергей Ильин" class="event-card__img">
+              </div>
+              <p class="event-card__place">
+                ММОМА
+              </p>
+              <p class="event-card__date">
+                24 марта 19:00
+              </p>
+              <div class="event-card__wrap">
+                <h3 class="event-card__title">
+                  «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                </h3>
+                <p class="event-card__desc">
+                  Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
+                </p>
+                <a href="#" class="event-card__link">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+            <article class="section-events__card event-card">
+              <div class="event-card__img-wrap">
+                <img src="img/exhibition.jpg" alt="Дмитрий Петров и Сергей Ильин" class="event-card__img">
+              </div>
+              <p class="event-card__place">
+                Еврейский музей
+              </p>
+              <p class="event-card__date">
+                с 31 марта по 21 апреля
+              </p>
+              <div class="event-card__wrap">
+                <h3 class="event-card__title">
+                  Выставка «Формация 2020»
+                </h3>
+                <p class="event-card__desc">
+                  Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
+                </p>
+                <a href="#" class="event-card__link">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+            <article class="section-events__card event-card">
+              <div class="event-card__img-wrap">
+                <img src="img/biennale.jpg" alt="Дмитрий Петров и Сергей Ильин" class="event-card__img">
+              </div>
+              <p class="event-card__place">
+                Третьяковка на Крымском валу
+              </p>
+              <p class="event-card__date">
+                с 30 марта по 30 апреля
+              </p>
+              <div class="event-card__wrap">
+                <h3 class="event-card__title">
+                  XXIV Международная биеннале молодого искусства
+                </h3>
+                <p class="event-card__desc">
+                  Внезапно, реплицированные с зарубежных источников, современные исследования.
+                </p>
+                <a href="#" class="event-card__link">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+            <article class="section-events__card event-card">
+              <div class="event-card__img-wrap">
+                <img src="img/vinzor.jpg" alt="Дмитрий Петров и Сергей Ильин" class="event-card__img">
+              </div>
+              <p class="event-card__place">
+                ММАМ
+              </p>
+              <p class="event-card__date">
+                с 8 апреля по 20 мая
+              </p>
+              <div class="event-card__wrap">
+                <h3 class="event-card__title">
+                  Джон Винзор. Фотографии из серии «Метафора серебра»
+                </h3>
+                <p class="event-card__desc">
+                  Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
+                </p>
+                <a href="#" class="event-card__link">
+                  Подробнее
+                </a>
+              </div>
+            </article>
+          </div>
+          <button class="section-events__btn btn">
+            Все события
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section-editions section" id="editions">
+      <div class="container">
+        <div class="section-editions__wrap">
+          <div class="section-editions__filters">
+            <h2 class="section-editions__title section-title">
+              Издания
+            </h2>
+            <form action="#" class="section-editions__form editions-form">
+              <fieldset>
+                <legend class="editions-form__legend editions-form__legend_theme_cat">Категории</legend>
+                <div class="editions-form__checkbox-list">
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="best-sellers">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="best-sellers" value="Бестселлеры">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Бестселлеры
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="art">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="art" value="Искусство">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Искусство
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="architecture">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="architecture" value="Архитектура">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Архитектура
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="design">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="design" value="Дизайн">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Дизайн
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="fashion">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="fashion" value="Мода">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Мода
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="for-children">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="for-children" value="Детям">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Детям
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="fiction">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="fiction" value="Художественная литература">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Художественная литература
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="journalism">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="journalism" value="Публицистика">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Публицистика
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="travel-guides">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="travel-guides" value="Путеводители">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Путеводители
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="philosophy">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="philosophy" value="Философия">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Философия
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="educational-literature">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="educational-literature" value="Учебная литература">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Учебная литература
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="editions-form__checkbox editions-checkbox">
+                    <label class="editions-checkbox__label" for="magazines">
+                      <input type="checkbox" class="editions-checkbox__input" name="Категории" id="magazines" value="Журналы и газеты">
+                      <span class="editions-checkbox__content">
+                        <span class="editions-checkbox__icon"></span>
+                        <span class="editions-checkbox__text">
+                          Журналы и газеты
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend class="editions-form__legend editions-form__legend_marg_price">
+                  Цена
+                </legend>
+                <div class="editions-form__priceFilter editions-priceFilter">
+                  <span class="editions-priceFilter__text">
+                    От
+                  </span>
+                  <input type="text" class="editions-priceFilter__input" name="minPrice" value="50" maxlength="10">
+                  <span class="editions-priceFilter__text">
+                    до
+                  </span>
+                  <input type="text" class="editions-priceFilter__input" name="maxPrice" value="25 000" maxlength="10">
+                  <span class="editions-priceFilter__text">
+                    руб.
+                  </span>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="section-editions__content">
+            <div class="section-editions__swiper editions-swiper swiper">
+              <div class="editions-swiper__wrap swiper-wrapper">
+                <article class="editions-swiper__slide editions-slide swiper-slide">
+                  <picture class="editions-slide__pic">
+                    <source srcset="img/editions-picture-1-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="img/editions-picture-1-tablet.jpg" media="(max-width: 1200px)">
+                    <img class="editions-slide__img" src="img/editions-picture-1.jpg" alt="Картина">
+                  </picture>
+                  <div class="editions-slide__wrap">
+                    <div class="editions-slide__info">
+                      <h3 class="editions-slide__title">
+                        Искусство цвета
+                      </h3>
+                      <h4 class="editions-slide__name">
+                        Иттен, Иоханнес
+                      </h4>
+                    </div>
+                    <span class="editions-slide__price">
+                      620 руб
+                    </span>
+                  </div>
+                  <a href="" class="editions-slide__link btn">
+                    Заказать
+                  </a>
+                </article>
+                <article class="editions-swiper__slide editions-slide swiper-slide">
+                  <picture class="editions-slide__pic">
+                    <source srcset="img/editions-picture-2-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="img/editions-picture-2-tablet.jpg" media="(max-width: 1200px)">
+                    <img class="editions-slide__img" src="img/editions-picture-2.jpg" alt="Картина">
+                  </picture>
+                  <div class="editions-slide__wrap">
+                    <div class="editions-slide__info">
+                      <h3 class="editions-slide__title">
+                        Типографика
+                      </h3>
+                      <h4 class="editions-slide__name">
+                        Рудер, Эмиль
+                      </h4>
+                    </div>
+                    <span class="editions-slide__price">
+                      2 450 руб
+                    </span>
+                  </div>
+                  <a href="" class="editions-slide__link btn">
+                    Заказать
+                  </a>
+                </article>
+                <article class="editions-swiper__slide editions-slide swiper-slide">
+                  <picture class="editions-slide__pic">
+                    <source srcset="img/editions-picture-3-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="img/editions-picture-3-tablet.jpg" media="(max-width: 1200px)">
+                    <img class="editions-slide__img" src="img/editions-picture-3.jpg" alt="Картина">
+                  </picture>
+                  <div class="editions-slide__wrap">
+                    <div class="editions-slide__info">
+                      <h3 class="editions-slide__title">
+                        Книга про буквы
+                      </h3>
+                      <h4 class="editions-slide__name">
+                        Гордон, Юрий
+                      </h4>
+                    </div>
+                    <span class="editions-slide__price">
+                      2 200 руб
+                    </span>
+                  </div>
+                  <a href="" class="editions-slide__link btn">
+                    Заказать
+                  </a>
+                </article>
+                <article class="editions-swiper__slide editions-slide swiper-slide">
+                  <picture class="editions-slide__pic">
+                    <source srcset="img/editions-picture-4-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="img/editions-picture-4-tablet.jpg" media="(max-width: 1200px)">
+                    <img class="editions-slide__img" src="img/editions-picture-4.jpg" alt="Картина">
+                  </picture>
+                  <div class="editions-slide__wrap">
+                    <div class="editions-slide__info">
+                      <h3 class="editions-slide__title">
+                        Николай Ильин
+                      </h3>
+                      <h4 class="editions-slide__name">
+                        Кричевский, Владимир
+                      </h4>
+                    </div>
+                    <span class="editions-slide__price">
+                      1 100 руб
+                    </span>
+                  </div>
+                  <a href="" class="editions-slide__link btn">
+                    Заказать
+                  </a>
+                </article>
+                <article class="editions-swiper__slide editions-slide swiper-slide">
+                  <picture class="editions-slide__pic">
+                    <source srcset="img/editions-picture-5-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="img/editions-picture-5-tablet.jpg" media="(max-width: 1200px)">
+                    <img class="editions-slide__img" src="img/editions-picture-5.jpg" alt="Картина">
+                  </picture>
+                  <div class="editions-slide__wrap">
+                    <div class="editions-slide__info">
+                      <h3 class="editions-slide__title">
+                        Модульные сетки в граф...
+                      </h3>
+                      <h4 class="editions-slide__name">
+                        Мюллер-Брокманн, Йозеф
+                      </h4>
+                    </div>
+                    <span class="editions-slide__price">
+                      1 450 руб
+                    </span>
+                  </div>
+                  <a href="" class="editions-slide__link btn">
+                    Заказать
+                  </a>
+                </article>
+                <article class="editions-swiper__slide editions-slide swiper-slide">
+                  <picture class="editions-slide__pic">
+                    <source srcset="img/editions-picture-6-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="img/editions-picture-6-tablet.jpg" media="(max-width: 1200px)">
+                    <img class="editions-slide__img" src="img/editions-picture-6.jpg" alt="Картина">
+                  </picture>
+                  <div class="editions-slide__wrap">
+                    <div class="editions-slide__info">
+                      <h3 class="editions-slide__title">
+                        Эволюция графических ст...
+                      </h3>
+                      <h4 class="editions-slide__name">
+                        Хеллер, Чваст
+                      </h4>
+                    </div>
+                    <span class="editions-slide__price">
+                      3 200 руб
+                    </span>
+                  </div>
+                  <a href="" class="editions-slide__link btn">
+                    Заказать
+                  </a>
+                </article>
+                <article class="editions-swiper__slide editions-slide swiper-slide">
+                  <picture class="editions-slide__pic">
+                    <source srcset="img/editions-picture-7-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="img/editions-picture-7-tablet.jpg" media="(max-width: 1200px)">
+                    <img class="editions-slide__img" src="img/editions-picture-7.jpg" alt="Картина">
+                  </picture>
+                  <div class="editions-slide__wrap">
+                    <div class="editions-slide__info">
+                      <h3 class="editions-slide__title">
+                        Искусство и визуальное в...
+                      </h3>
+                      <h4 class="editions-slide__name">
+                        Арнхейм, Рудольф
+                      </h4>
+                    </div>
+                    <span class="editions-slide__price">
+                      2 200 руб
+                    </span>
+                  </div>
+                  <a href="" class="editions-slide__link btn">
+                    Заказать
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-projects section" id="projects">
+      <div class="container">
+        <h2 class="section-projects__title section-title">
+          Проекты
+        </h2>
+        <p class="section-projects__text text">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <button class="section-projects__tooltip js-tooltip" data-tippy-content="Пример современных тенденций - современная методология разработки">i</button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button class="section-projects__tooltip js-tooltip" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции">i</button> исключительно в разрезе маркетинговых и финансовых <button class="section-projects__tooltip js-tooltip" data-tippy-content="В стремлении повысить качество">i</button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="" class="section-projects__link">blanchard&#8209;part.ru/projects/about</a>
+        </p>
+        <h3 class="section-projects__subtitle">
+          Партнёры проектов:
+        </h3>
+        <div class="section-projects__swiper-wrap">
+          <div class="section-projects__swiper projects-swiper swiper">
+            <div class="projects-swiper__nav">
+              <button class="projects-swiper__btn-prev projects-swiper__btn"></button>
+              <button class="projects-swiper__btn-next projects-swiper__btn"></button>
+            </div>
+            <div class="projects-swiper__wrap swiper-wrapper">
+              <a href="" class="projects-swiper__slide swiper-slide">
+
+                <img class="projects-swiper__img" src="img/freelands.png" alt="Логотип фирмы Freelands Foundation">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/ica.png" alt="Логотип фирмы ICA">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/workhouse.png" alt="Логотип фирмы Workhouse">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/1849.png" alt="Логотип фирмы 1849">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/hiscox.png" alt="Логотип фирмы HISCOX">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/camden.png" alt="Логотип фирмы Camden">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/stassen.png" alt="Логотип фирмы Stassen">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/watts.png" alt="Логотип фирмы WATTS">
+              </a>
+              <a href="" class="projects-swiper__slide swiper-slide">
+                <img class="projects-swiper__img" src="img/esad.png" alt="Логотип фирмы esad">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-contacts section" id="contacts">
+      <div class="container">
+        <h2 class="section-contacts__title section-title">
+          Контакты
+        </h2>
+      </div>
+      <div class="section-contacts__wrap">
+        <div class="section-contacts__info">
+          <div class="section-contacts__container container">
+            <h3 class="section-contacts__subtitle">
+              Шоурум №4
+            </h3>
+            <p class="section-contacts__address text">
+              Леонтьевский переулок, дом 5/1
+            </p>
+            <h4 class="section-contacts__info-title">
+              Заказать обратный звонок
+            </h4>
+            <form action="#" class="section-contacts__form contacts-form">
+              <div class="contacts-form__input-wrap">
+                <input type="text" name="name" class="contacts-form__input" placeholder="Имя*" autocomplete="off" data-validate-field="name">
+              </div>
+              <div class="contacts-form__input-wrap">
+                <input type="tel" name="phone" class="contacts-form__input contacts-form__input_val_phone" placeholder="Телефон*" data-validate-field="phone">
+              </div>
+              <button type="submit" class="contacts-form__btn btn">
+                Заказать
+              </button>
+            </form>
+            <h4 class="section-contacts__info-title section-contacts__info-title_n_messengers">
+              Связаться в один клик
+            </h4>
+            <ul class="section-contacts__messengers messengers">
+              <li class="messengers__item">
+                <a href="" class="messengers__link messengers__link_name_whatsapp" target="_blank"></a>
+              </li>
+              <li class="messengers__item">
+                <a href="" class="messengers__link messengers__link_name_telegram" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-contacts__map" id="map"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <a href="" class="footer__logo logo" aria-label="Логотип Blanchard">
+          <img class="logo__img" src="img/logo.svg" alt="Logo">
+        </a>
+        <ul class="footer__soc-media soc-media">
+          <li class="soc-media__item">
+            <a href="" class="soc-media__link">
+              <svg class="soc-media__icon" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z" fill="#cacaca"/>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media__item">
+            <a href="" class="soc-media__link">
+              <svg class="soc-media__icon" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.1172 22.5C18.1172 24.8785 20.0453 26.8066 22.4238 26.8066C24.8024 26.8066 26.7305 24.8785 26.7305 22.5C26.7305 20.1215 24.8024 18.1934 22.4238 18.1934C20.0453 18.1934 18.1172 20.1215 18.1172 22.5Z" fill="#cacaca"/>
+                <path d="M12.3521 14.8803C12.5591 14.3194 12.8894 13.8116 13.3185 13.3948C13.7353 12.9656 14.2428 12.6354 14.8041 12.4283C15.2593 12.2515 15.9432 12.0411 17.2029 11.9837C18.5655 11.9216 18.9741 11.9082 22.4238 11.9082C25.8738 11.9082 26.2824 11.9212 27.6447 11.9834C28.9044 12.0411 29.5886 12.2515 30.0435 12.4283C30.6048 12.6354 31.1126 12.9656 31.5291 13.3948C31.9582 13.8116 32.2885 14.319 32.4959 14.8803C32.6727 15.3356 32.8831 16.0198 32.9405 17.2795C33.0026 18.6418 33.016 19.0503 33.016 22.5004C33.016 25.9501 33.0026 26.3587 32.9405 27.7213C32.8831 28.981 32.6727 29.6649 32.4959 30.1201C32.2885 30.6814 31.9586 31.1889 31.5294 31.6057C31.1126 32.0348 30.6052 32.3651 30.0438 32.5721C29.5886 32.7493 28.9044 32.9597 27.6447 33.0171C26.2824 33.0792 25.8742 33.0922 22.4241 33.0922C18.9737 33.0922 18.5652 33.0792 17.2032 33.0171C15.9436 32.9597 15.2593 32.7493 14.8041 32.5721C13.6773 32.1375 12.7867 31.2469 12.3521 30.1201C12.1753 29.6649 11.9648 28.981 11.9071 27.7213C11.845 26.3587 11.8319 25.9501 11.8319 22.5004C11.8319 19.0503 11.845 18.6418 11.9071 17.2795C11.9645 16.0198 12.1749 15.3356 12.3521 14.8803ZM22.4238 29.1344C26.0881 29.1344 29.0585 26.1643 29.0585 22.5001C29.0585 18.8358 26.0881 15.8657 22.4238 15.8657C18.7599 15.8657 15.7894 18.8358 15.7894 22.5001C15.7894 26.1643 18.7599 29.1344 22.4238 29.1344ZM15.5271 17.1538C16.3834 17.1538 17.0776 16.4596 17.0776 15.6034C17.0776 14.7471 16.3834 14.0529 15.5271 14.0529C14.6709 14.0529 13.9767 14.7471 13.9767 15.6034C13.977 16.4596 14.6709 17.1538 15.5271 17.1538Z" fill="#cacaca"/>
+                <path d="M22.6204 0C34.9364 0 44.9238 9.98747 44.9238 22.3034C44.9238 34.6194 34.9364 44.6069 22.6204 44.6069C10.3044 44.6069 0.316959 34.6194 0.316959 22.3034C0.316959 9.98747 10.3044 0 22.6204 0ZM9.89059 27.5836C9.95253 28.9469 10.1693 29.8777 10.4858 30.6924C11.1512 32.4127 12.5111 33.7727 14.2314 34.438C15.0458 34.7545 15.9769 34.971 17.3399 35.0332C18.7057 35.0955 19.1419 35.1105 22.6201 35.1105C26.0985 35.1105 26.5345 35.0955 27.9005 35.0332C29.2635 34.971 30.1946 34.7545 31.009 34.438C31.8639 34.1164 32.6378 33.6124 33.2776 32.9607C33.929 32.3212 34.433 31.547 34.7546 30.6924C35.0711 29.878 35.2879 28.9469 35.3498 27.5839C35.4128 26.2178 35.4274 25.7815 35.4274 22.3034C35.4274 18.8253 35.4128 18.389 35.3502 17.0233C35.2883 15.66 35.0718 14.7292 34.7553 13.9145C34.4337 13.0599 33.9293 12.2857 33.2776 11.6462C32.6382 10.9945 31.8639 10.4905 31.0094 10.1689C30.1946 9.85236 29.2638 9.63592 27.9005 9.57364C26.5348 9.51136 26.0985 9.49638 22.6204 9.49638C19.1423 9.49638 18.706 9.51136 17.3403 9.57398C15.9769 9.63592 15.0462 9.85236 14.2314 10.1685C13.3769 10.4901 12.6026 10.9945 11.9628 11.6462C11.3114 12.286 10.8071 13.0599 10.4858 13.9145C10.169 14.7292 9.95253 15.66 9.89025 17.0233C9.82798 18.389 9.81334 18.8253 9.81334 22.3034C9.81334 25.7815 9.82798 26.2178 9.89059 27.5836Z" fill="#cacaca"/>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media__item">
+            <a href="" class="soc-media__link">
+              <svg class="soc-media__icon" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 0C10.125 0 0 10.1431 0 22.6355C0 33.9307 8.23499 43.3057 18.99 45V29.1867H13.275V22.6355H18.99V17.6431C18.99 11.9729 22.3425 8.85542 27.495 8.85542C29.9475 8.85542 32.5125 9.28464 32.5125 9.28464V14.8645H29.6775C26.8875 14.8645 26.01 16.6039 26.01 18.3886V22.6355H32.265L31.2525 29.1867H26.01V45C31.312 44.1593 36.1399 41.4432 39.6223 37.342C43.1047 33.2408 45.012 28.0248 44.9999 22.6355C44.9999 10.1431 34.875 0 22.5 0Z" fill="#cacaca"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-gallery">
+    <div class="modal-gallery__overlay"></div>
+    <div class="modal-gallery__card">
+      <button class="modal-gallery__close">
+        <svg class="modal-gallery__close-icon" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3044L15.3333 0.000153846L16 0.695801L1.33331 16L0.666641 15.3044Z" fill="black"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666481 -0.000125032L15.3332 15.3041L14.6665 15.9998L-0.000186526 0.695522L0.666481 -0.000125032Z" fill="black"/>
+        </svg>
+      </button>
+      <div class="modal-gallery__img">
+        <img src="#" alt="">
+      </div>
+      <div class="modal-gallery__content">
+        <h3 class="modal-gallery__name">Имя художника</h3>
+        <h4 class="modal-gallery__title">Название картины</h4>
+        <span class="modal-gallery__date">годы жизни</span>
+        <p class="modal-gallery__desc">описание</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
